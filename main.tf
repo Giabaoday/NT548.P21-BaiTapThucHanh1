@@ -29,7 +29,7 @@ module "route_tables" {
 }
 
 module "public_sg" {
-  source = "./modules/security_group"
+  source = "./modules/security_groups"
 
   name        = "public-instance-security-group"
   description = "Security group for public instances"
@@ -58,7 +58,7 @@ module "public_sg" {
 }
 
 module "private_sg" {
-  source = "./modules/security_group"
+  source = "./modules/security_groups"
 
   name        = "private-instance-security-group"
   description = "Security group for private instances"

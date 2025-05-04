@@ -34,7 +34,8 @@ resource "aws_internet_gateway" "main" {
 }
 
 resource "aws_default_security_group" "default" {
-  vpc_id = aws_vpc.mainvpc.id
+  #vpc_id = aws_vpc.mainvpc.id
+  vpc_id = aws_vpc.main.id
 
   ingress {
     protocol  = -1
