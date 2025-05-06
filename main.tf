@@ -42,7 +42,7 @@ module "public_sg" {
       from_port   = 22
       to_port     = 22
       protocol    = "tcp"
-      cidr_blocks = ["172.16.1.246/32"]
+      cidr_blocks = ["172.16.0.98/32"]
     }
   ]
 
